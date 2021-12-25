@@ -1,8 +1,17 @@
+@import "@radix-ui/colors/slateDark.css";
+
+body {
+  /* Set variables */
+  --background-color: var(--slate1);
+  --font-color-high-contrast: var(--slate12);
+  --font-color-low-contrast: var(--slate11);
+
+  /* --font-serif: blue; https://fonts.google.com/specimen/Lusitana?query=lusitana#standard-styles
+  --font-sans: blue; */
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: var(--background-color);
+  color: var(--font-color-high-contrast);
+  min-height: 100vh;
 }
