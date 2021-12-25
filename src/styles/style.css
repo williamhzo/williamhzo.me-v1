@@ -1,20 +1,23 @@
 @import "@radix-ui/colors/slateDark.css";
 
-body {
+html {
   /* Set variables */
   --background-color: var(--slate1);
-  --font-color-high-contrast: var(--slate12);
+  --font-color: var(--slate12);
   --font-color-low-contrast: var(--slate11);
 
   --font-serif: "Lusitana", serif;
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  background-color: var(--background-color);
+
+  --grid-gap: 1.25rem;
 }
 
 #app {
   background-color: var(--background-color);
-  color: var(--font-color-high-contrast);
+  color: var(--font-color);
   font-size: 16px;
   font-family: var(--font-sans);
   line-height: 1.5;
@@ -24,18 +27,25 @@ main {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 80ch;
+  max-width: 70ch;
   min-height: 100vh;
-  padding: 2rem;
+  padding: 8rem 2rem 2rem 2rem;
+}
+
+header {
+  display: grid;
+  gap: var(--grid-gap);
 }
 
 h1 {
   font-family: var(--font-serif);
+  line-height: 1;
   font-size: 1.5rem;
   font-weight: normal;
 }
 
-h2 {
+h2,
+h3 {
   font-family: var(--font-sans);
   font-size: 1rem;
   font-weight: normal;
@@ -44,7 +54,6 @@ h2 {
 
 p {
   line-height: 1.5;
-  margin-top: 0.5rem;
 }
 
 em {
@@ -55,8 +64,13 @@ hr {
   width: 6rem;
   height: 1px;
   border: none;
-  background-color: var(--slate11);
-  margin: 1.5rem 0;
+  background-color: var(--slate6);
+  margin: var(--grid-gap) 0;
+}
+
+section {
+  display: grid;
+  gap: var(--grid-gap);
 }
 
 ul {
@@ -67,8 +81,51 @@ li {
   list-style: none;
 }
 
-.socials {
+a {
+  font-weight: normal;
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--slate9);
+  padding-bottom: 0.25rem;
+  transition: border-color 250ms ease 0s;
+}
+
+a:hover {
+  border-bottom: 1px solid var(--font-color-low-contrast);
+}
+
+.icons a {
+  display: block;
+  border-bottom: none;
+  padding: 0.5rem;
+}
+
+.socials,
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icons svg {
+  height: 1.25rem;
+  width: 1.25rem;
+  transition: color 250ms ease 0s;
+}
+
+.icons svg:hover {
+  color: var(--font-color-low-contrast);
+}
+
+.socials a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
+}
+
+.socials li:not(:last-child),
+.icons li:not(:last-child) {
+  margin-right: var(--grid-gap);
 }
