@@ -1,0 +1,17 @@
+{
+  "name": "willamhz.me",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2"
+  },
+  "dependencies": {
+    "eslint": "^8.5.0"
+  }
+}
