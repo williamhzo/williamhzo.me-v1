@@ -6,3 +6,4 @@ next steps:
 - add light mode toggle
 - add custom cursor select color
 - apply lighthouse recommendations
+- add custom favicon
