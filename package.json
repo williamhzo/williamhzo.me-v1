@@ -8,6 +8,7 @@
     "lint": "vite preview"
   },
   "devDependencies": {
+    "esbuild": "^0.14.8",
     "eslint": "^8.5.0",
     "typescript": "^4.4.4",
     "vite": "^2.7.2"
