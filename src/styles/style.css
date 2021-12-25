@@ -65,7 +65,7 @@ hr {
   height: 1px;
   border: none;
   background-color: var(--slate6);
-  margin: 2.5rem 0;
+  margin: var(--grid-gap) 0;
 }
 
 section {
