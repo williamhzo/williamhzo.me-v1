@@ -6,12 +6,69 @@ body {
   --font-color-high-contrast: var(--slate12);
   --font-color-low-contrast: var(--slate11);
 
-  /* --font-serif: blue; https://fonts.google.com/specimen/Lusitana?query=lusitana#standard-styles
-  --font-sans: blue; */
+  --font-serif: "Lusitana", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 
 #app {
   background-color: var(--background-color);
   color: var(--font-color-high-contrast);
+  font-size: 16px;
+  font-family: var(--font-sans);
+  line-height: 1.5;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 80ch;
   min-height: 100vh;
+  padding: 2rem;
+}
+
+h1 {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--font-color-low-contrast);
+}
+
+p {
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+em {
+  font-family: var(--font-serif);
+}
+
+hr {
+  width: 6rem;
+  height: 1px;
+  border: none;
+  background-color: var(--slate11);
+  margin: 1.5rem 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
