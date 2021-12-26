@@ -7,3 +7,4 @@ next steps:
 - add custom cursor select color
 - apply lighthouse recommendations
 - add custom favicon
+- add language swithcher (i18n?)
