@@ -26,7 +26,14 @@ main {
   margin: 0 auto;
   max-width: 70ch;
   min-height: 100vh;
-  padding: 8rem 2rem 2rem 2rem;
+  padding: 4rem 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 2rem;
+    padding-top: 8rem;
+  }
 }
 
 header {
