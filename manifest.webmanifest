@@ -1,0 +1,7 @@
+{
+  "name": "williamhzo.me",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg", "sizes": "192x192" },
+    { "src": "/favicon.svg", "type": "image/svg", "sizes": "512x512" }
+  ]
+}
