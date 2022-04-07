@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
-  return <p>prout</p>;
+  return <h1 className="text-3xl font-bold underline">prout!</h1>;
 };
 
 export default Home;
