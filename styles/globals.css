@@ -16,7 +16,7 @@
   }
 
   .social-link {
-    @apply arrow-icon flex items-center gap-1 text-low-contrast;
+    @apply arrow-icon flex items-center gap-1 text-high-contrast;
   }
 
   .separator {
@@ -25,6 +25,10 @@
 
   h3 {
     @apply text-low-contrast;
+  }
+
+  em {
+    @apply font-serif text-high-contrast;
   }
 
   ::selection {

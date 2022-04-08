@@ -21,7 +21,7 @@ export default function Tooltip({ children, content }: TooltipProps) {
         <Trigger asChild onMouseDown={(event) => event.preventDefault()}>
           {children}
         </Trigger>
-        <Content className="rounded-md border-[1px] border-low-contrast bg-background px-3 py-2 text-white">
+        <Content className="rounded-md border-[1px] border-low-contrast bg-background px-3 py-2 text-contrast">
           {content}
           <Arrow className="fill-low-contrast" />
         </Content>

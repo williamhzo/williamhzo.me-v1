@@ -19,7 +19,7 @@ export default function Link({
       target="_blank"
       rel="noreferrer"
       title={title}
-      className={`${className} text-low-contrast hover:text-white`}
+      className={`${className} text-high-contrast hover:text-contrast`}
     >
       {children}
     </a>

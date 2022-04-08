@@ -11,14 +11,12 @@ export default function Main() {
 
         <p>
           Frontend Engineer with a deep interest in{" "}
-          <em className="font-serif">clean User Interfaces</em> and web
-          experiences, I thrive at the intersection of Product, Design and
-          Engineering.
+          <em>clean User Interfaces</em> and web experiences, I thrive at the
+          intersection of Product, Design and Engineering.
         </p>
 
         <p>
-          All things <em className="font-serif">Design Systems</em>, a11y and
-          User Experience.
+          All things <em>Design Systems</em>, a11y and <em>User Experience</em>.
         </p>
 
         <p>
@@ -28,8 +26,7 @@ export default function Main() {
 
         <p>
           Currently at <Link href="https://getmansa.com">Mansa</Link> building
-          the product from wireframes to QA, and{" "}
-          <em className="font-serif">learning a lot</em>.
+          the product from wireframes to QA, and <em>learning a lot</em>.
         </p>
 
         <p>

@@ -45,7 +45,7 @@ export default function Contact() {
           }
         >
           <button
-            className="text-low-contrast hover:text-white"
+            className="text-high-contrast hover:text-contrast"
             onClick={handleClick}
           >
             {EMAIL}
