@@ -7,7 +7,7 @@
     opacity: 0;
     position: relative;
     transition: all 0.275s ease-out;
-    transform: translateX(calc(-15px));
+    transform: translateX(-15px);
   }
 
   .arrow-icon:hover svg {
