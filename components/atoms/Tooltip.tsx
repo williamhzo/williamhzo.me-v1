@@ -18,11 +18,7 @@ export default function Tooltip({ children, content }: TooltipProps) {
   return (
     <Provider delayDuration={200}>
       <Root>
-        <Trigger
-          asChild
-          onMouseDown={(e) => e.preventDefault()}
-          onClick={(e) => e.preventDefault()}
-        >
+        <Trigger asChild onMouseDown={(event) => event.preventDefault()}>
           {children}
         </Trigger>
         <Content className="rounded-md border-[1px] border-low-contrast bg-background px-3 py-2 text-white">
