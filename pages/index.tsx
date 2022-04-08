@@ -1,11 +1,9 @@
 import type { NextPage } from "next";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
-import Hr from "../components/atoms/Hr";
 import Link from "../components/atoms/Link";
 import Section from "../components/atoms/Section";
 import SEO from "../components/SEO";
-import SubHeading from "../components/atoms/SubHeading";
 
 const Home: NextPage = () => {
   return (
@@ -15,10 +13,10 @@ const Home: NextPage = () => {
       <main className="mx-auto my-0 flex min-h-[100vh] max-w-[70ch] flex-col px-8 py-16 text-white lg:p-8 lg:pt-32">
         <Header />
 
-        <Hr />
+        <hr className="separator" />
 
         <Section>
-          <SubHeading>whodis</SubHeading>
+          <h3>whodis</h3>
 
           <p>
             Frontend Engineer with a deep interest in{" "}
@@ -39,7 +37,7 @@ const Home: NextPage = () => {
           </p>
         </Section>
 
-        <Hr />
+        <hr className="separator" />
 
         <Contact />
       </main>

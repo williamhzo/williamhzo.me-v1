@@ -1,17 +1,20 @@
 import React from "react";
 import Link from "./atoms/Link";
 import Section from "./atoms/Section";
-import SubHeading from "./atoms/SubHeading";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 
 export default function FooterF() {
   return (
     <Section>
-      <SubHeading>connect</SubHeading>
+      <h3>connect</h3>
 
       <p>
-        If you&apos;re in Porto 🇵🇹, let&apos;s grab coffee. Or you can reach me
-        at <Link href="https://twitter.com/williamhzo">@williamhzo</Link>, or{" "}
+        If you&apos;re in Porto{" "}
+        <span role="img" aria-label="Portuguese flag">
+          🇵🇹
+        </span>
+        , let&apos;s grab coffee. Or you can reach me at{" "}
+        <Link href="https://twitter.com/williamhzo">@williamhzo</Link>, or{" "}
         <Link href="mailto:hi@williamhzo.me">hi@williamhzo.me</Link>.
       </p>
 
