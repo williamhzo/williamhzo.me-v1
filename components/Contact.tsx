@@ -1,9 +1,30 @@
 import React from "react";
 import Link from "./atoms/Link";
 import Section from "./atoms/Section";
-import { ArrowTopRightIcon } from "@radix-ui/react-icons";
+import {
+  ArrowTopRightIcon,
+  ClipboardCopyIcon,
+  CheckCircledIcon,
+} from "@radix-ui/react-icons";
+import Tooltip from "./atoms/Tooltip";
 
-export default function FooterF() {
+const EMAIL = "hi@williamhzo.me";
+const COPY_RESET_DELAY = 4000; // in ms
+
+export default function Contact() {
+  const [copied, setCopied] = React.useState(false);
+
+  function handleClick() {
+    if (!navigator.clipboard) return console.warn("update your browser buddy!");
+
+    navigator.clipboard.writeText(EMAIL);
+    setCopied(true);
+
+    setTimeout(() => {
+      setCopied(false);
+    }, COPY_RESET_DELAY);
+  }
+
   return (
     <Section>
       <h3>connect</h3>
@@ -13,9 +34,24 @@ export default function FooterF() {
         <span role="img" aria-label="Portuguese flag">
           🇵🇹
         </span>
-        , let&apos;s grab coffee. Or you can reach me at{" "}
-        <Link href="https://twitter.com/williamhzo">@williamhzo</Link>, or{" "}
-        <Link href="mailto:hi@williamhzo.me">hi@williamhzo.me</Link>.
+        , let&apos;s grab a cup of tea. If you don&apos;t like tea you can reach
+        me at <Link href="https://twitter.com/williamhzo">@williamhzo</Link>, or{" "}
+        <Tooltip
+          content={
+            <p className="flex w-20 items-center justify-center gap-2">
+              {copied ? "copied" : "copy"}
+              {copied ? <CheckCircledIcon /> : <ClipboardCopyIcon />}
+            </p>
+          }
+        >
+          <button
+            className="border-b-[1px] border-low-contrast pb-[2px] hover:text-low-contrast"
+            onClick={handleClick}
+          >
+            {EMAIL}
+          </button>
+        </Tooltip>
+        .
       </p>
 
       <nav className="mt-6">
