@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header>
       <h1 className="font-serif text-2xl leading-none">william hermozo</h1>
-      <h2 className="text-low ">code & design</h2>
+      <h2 className="text-low">code & design</h2>
 
       <nav>
         <ul className="icons">

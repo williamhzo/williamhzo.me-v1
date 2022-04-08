@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Hr() {
-  return <hr className="border-0 w-24 h-[1px] bg-subtle my-5" />;
+  return <hr className="my-5 h-[1px] w-24 border-0 bg-subtle" />;
 }
