@@ -2,7 +2,7 @@ import React from "react";
 import Link from "./atoms/Link";
 import Section from "./atoms/Section";
 import SubHeading from "./atoms/SubHeading";
-import { ExternalLinkIcon } from "@radix-ui/react-icons";
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 
 export default function FooterF() {
   return (
@@ -12,43 +12,43 @@ export default function FooterF() {
       <p>
         If you&apos;re in Porto 🇵🇹, let&apos;s grab coffee. Or you can reach me
         at <Link href="https://twitter.com/williamhzo">@williamhzo</Link>, or{" "}
-        <Link href="mailto:hi@williamhzo.me">hi@williamhzo.me</Link>
+        <Link href="mailto:hi@williamhzo.me">hi@williamhzo.me</Link>.
       </p>
 
       <nav className="mt-6">
         <ul className="flex justify-start gap-8">
           <li>
-            <Link
+            <a
               href="https://github.com/williamhzo"
               title="Github"
-              className="flex items-center gap-1"
+              className="social-link"
             >
               github
-              <ExternalLinkIcon />
+              <ArrowTopRightIcon />
               <span className="sr-only">Github external link</span>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               href="https://twitter.com/williamhzo"
               title="Twitter"
-              className="flex items-center gap-1"
+              className="social-link"
             >
               twitter
-              <ExternalLinkIcon />
+              <ArrowTopRightIcon />
               <span className="sr-only">Twitter external link</span>
-            </Link>
+            </a>
           </li>
           <li>
-            <Link
+            <a
               href="https://www.linkedin.com/in/williamhermozo/"
               title="Linkedin"
-              className="flex items-center gap-1"
+              className="social-link"
             >
               linkedin
-              <ExternalLinkIcon />
+              <ArrowTopRightIcon />
               <span className="sr-only">Linkedin external link</span>
-            </Link>
+            </a>
           </li>
         </ul>
       </nav>

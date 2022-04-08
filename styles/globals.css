@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .arrow-icon svg {
+    opacity: 0;
+    position: relative;
+    transition: all 0.275s ease-out;
+    transform: translateX(calc(-15px));
+  }
+
+  .arrow-icon:hover svg {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  .social-link {
+    @apply arrow-icon flex items-center gap-1 text-low-contrast;
+  }
+}
