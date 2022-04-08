@@ -1,11 +1,11 @@
 import type { NextPage } from "next";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
-import Hr from "../components/Hr";
-import Link from "../components/Link";
-import Section from "../components/Section";
+import Hr from "../components/atoms/Hr";
+import Link from "../components/atoms/Link";
+import Section from "../components/atoms/Section";
 import SEO from "../components/SEO";
-import SubHeading from "../components/SubHeading";
+import SubHeading from "../components/atoms/SubHeading";
 
 const Home: NextPage = () => {
   return (

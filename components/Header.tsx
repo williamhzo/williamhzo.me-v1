@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "./Link";
+import Link from "./atoms/Link";
 
 export default function Header() {
   return (

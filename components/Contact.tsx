@@ -1,7 +1,7 @@
 import React from "react";
-import Link from "./Link";
-import Section from "./Section";
-import SubHeading from "./SubHeading";
+import Link from "./atoms/Link";
+import Section from "./atoms/Section";
+import SubHeading from "./atoms/SubHeading";
 import { ExternalLinkIcon } from "@radix-ui/react-icons";
 
 export default function FooterF() {
