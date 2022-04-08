@@ -5,5 +5,5 @@ type SubHeadingProps = {
 };
 
 export default function SubHeading({ children }: SubHeadingProps) {
-  return <h3 className="text-low">{children}</h3>;
+  return <h3 className="text-low-contrast">{children}</h3>;
 }

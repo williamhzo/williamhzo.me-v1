@@ -13,7 +13,7 @@ export default function Link({ children, href, title = href }: LinkProps) {
       target="_blank"
       rel="noreferrer"
       title={title}
-      className="border-b-[1px] border-low pb-[2px] hover:border-high"
+      className="border-b-[1px] border-low-contrast pb-[2px] hover:border-high-contrast"
     >
       {children}
     </a>

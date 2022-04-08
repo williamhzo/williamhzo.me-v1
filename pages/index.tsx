@@ -9,7 +9,7 @@ import SubHeading from "../components/SubHeading";
 
 const Home: NextPage = () => {
   return (
-    <main className="first-letter: mx-auto my-0 flex min-h-[100vh] max-w-[70ch] flex-col bg-background px-8 py-16 text-white lg:p-8 lg:pt-32">
+    <main className="mx-auto my-0 flex min-h-[100vh] max-w-[70ch] flex-col px-8 py-16 text-white lg:p-8 lg:pt-32">
       <Header />
 
       <Hr />

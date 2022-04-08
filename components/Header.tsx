@@ -1,20 +1,17 @@
 import React from "react";
+import Link from "./Link";
 
 export default function Header() {
   return (
     <header>
       <h1 className="font-serif text-2xl leading-none">william hermozo</h1>
-      <h2 className="text-low">code & design</h2>
+
+      <h2 className="bold mt-6 font-normal text-low-contrast">code & design</h2>
 
       <nav>
         <ul className="icons">
           <li>
-            <a
-              href="https://github.com/williamhzo"
-              target="_blank"
-              rel="noreferrer"
-              title="Github"
-            >
+            <Link href="https://github.com/williamhzo" title="Github">
               <svg
                 width="15"
                 height="15"
@@ -32,15 +29,10 @@ export default function Header() {
                 ></path>
               </svg>
               <span className="sr-only">Github</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="https://twitter.com/williamhzo"
-              target="_blank"
-              rel="noreferrer"
-              title="Twitter"
-            >
+            <Link href="https://twitter.com/williamhzo" title="Twitter">
               <svg
                 width="15"
                 height="15"
@@ -58,7 +50,7 @@ export default function Header() {
                 ></path>
               </svg>
               <span className="sr-only">Twitter</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

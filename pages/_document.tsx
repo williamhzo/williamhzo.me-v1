@@ -18,11 +18,11 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Lusitana&display=optional"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Lusitana&display=optional"
             rel="stylesheet"
           />
         </Head>
-        <body>
+        <body className="bg-background">
           <Main />
           <NextScript />
         </body>
