@@ -20,7 +20,8 @@ const Home: NextPage = () => {
         <p>
           Frontend Engineer with a deep interest in{" "}
           <em className="font-serif">clean User Interfaces</em> and web
-          experiences.
+          experiences, I thrive at the intersection of Product, Design and
+          Engineering.
         </p>
 
         <p>
