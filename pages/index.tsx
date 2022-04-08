@@ -4,43 +4,23 @@ import Header from "../components/Header";
 import Link from "../components/atoms/Link";
 import Section from "../components/atoms/Section";
 import SEO from "../components/SEO";
+import Footer from "../components/Footer";
+import Main from "../components/Main";
 
 const Home: NextPage = () => {
   return (
     <>
       <SEO />
 
-      <main className="mx-auto my-0 flex min-h-[100vh] max-w-[70ch] flex-col px-8 py-16 text-white lg:p-8 lg:pt-32">
-        <Header />
+      <Header />
 
-        <hr className="separator" />
+      <hr className="separator" />
 
-        <Section>
-          <h3>whodis</h3>
+      <Main />
 
-          <p>
-            Frontend Engineer with a deep interest in{" "}
-            <em className="font-serif">clean User Interfaces</em> and web
-            experiences, I thrive at the intersection of Product, Design and
-            Engineering.
-          </p>
+      <hr className="separator w-full" />
 
-          <p>
-            All things <em className="font-serif">Design Systems</em>, a11y and
-            JamStack.
-          </p>
-
-          <p>
-            Currently at <Link href="https://getmansa.com">Mansa</Link> building
-            the product from wireframes to QA, and{" "}
-            <em className="font-serif">learning a lot</em>.
-          </p>
-        </Section>
-
-        <hr className="separator" />
-
-        <Contact />
-      </main>
+      <Footer />
     </>
   );
 };

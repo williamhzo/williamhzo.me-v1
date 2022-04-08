@@ -45,7 +45,7 @@ export default function Contact() {
           }
         >
           <button
-            className="border-b-[1px] border-low-contrast pb-[2px] hover:text-low-contrast"
+            className="text-low-contrast hover:text-white"
             onClick={handleClick}
           >
             {EMAIL}
@@ -67,6 +67,7 @@ export default function Contact() {
               <span className="sr-only">Github external link</span>
             </a>
           </li>
+
           <li>
             <a
               href="https://twitter.com/williamhzo"
@@ -78,6 +79,7 @@ export default function Contact() {
               <span className="sr-only">Twitter external link</span>
             </a>
           </li>
+
           <li>
             <a
               href="https://www.linkedin.com/in/williamhermozo/"

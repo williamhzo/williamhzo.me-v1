@@ -22,7 +22,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="bg-background">
+        <body className="mx-auto my-0 flex min-h-[100vh] max-w-[70ch] flex-col bg-background px-8 py-16 text-white lg:p-8 lg:pt-32">
           <Main />
           <NextScript />
         </body>

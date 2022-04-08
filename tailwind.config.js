@@ -13,6 +13,7 @@ module.exports = {
         background: "#151718",
         "high-contrast": "#ECEDEE",
         "low-contrast": "#99A29E",
+        "lowest-contrast": "#4C5155",
         subtle: "#313538",
       },
     },
