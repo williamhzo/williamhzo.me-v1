@@ -18,4 +18,12 @@
   .social-link {
     @apply arrow-icon flex items-center gap-1 text-low-contrast;
   }
+
+  .separator {
+    @apply my-5 h-[1px] w-24 border-0 bg-subtle;
+  }
+
+  h3 {
+    @apply text-low-contrast;
+  }
 }
