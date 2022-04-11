@@ -9,19 +9,19 @@ import Main from "../components/Main";
 
 const Home: NextPage = () => {
   return (
-    <>
+    <div className="flex min-h-[100vh] flex-col justify-between pt-16 pb-6">
       <SEO />
 
-      <Header />
+      <div>
+        <Header />
 
-      <hr className="separator" />
+        <hr className="separator" />
 
-      <Main />
-
-      <hr className="separator w-full" />
+        <Main />
+      </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 

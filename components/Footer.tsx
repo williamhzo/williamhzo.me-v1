@@ -2,10 +2,16 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="mb-base flex justify-between font-serif text-sm italic text-lowest-contrast">
-      <p>constantly learning</p>
+    <>
+      <footer>
+        <hr className="separator w-full" />
 
-      <p>Paris 2022</p>
-    </footer>
+        <span className="flex justify-between font-serif text-sm italic text-lowest-contrast">
+          <p>constantly learning</p>
+
+          <p>Paris 2022</p>
+        </span>
+      </footer>
+    </>
   );
 }
