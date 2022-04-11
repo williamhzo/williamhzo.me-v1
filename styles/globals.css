@@ -32,6 +32,6 @@
   }
 
   ::selection {
-    @apply bg-subtle;
+    @apply bg-contrast;
   }
 }
