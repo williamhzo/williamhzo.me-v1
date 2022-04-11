@@ -30,8 +30,8 @@ module.exports = {
         },
       },
       animation: {
-        "slide-up": "slide-up 0.3s ease-in-out",
-        "slide-down": "slide-down 0.3s ease-in-out",
+        "slide-up": "slide-up 0.3s ease-in-out forwards",
+        "slide-down": "slide-down 0.3s ease-in-out forwards",
       },
     },
   },
