@@ -19,6 +19,10 @@ export default function SEO() {
       <meta property="og:locale" content="en_GB" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://williamhzo.me/" />
+      <meta
+        property="og:image"
+        content="https://res.cloudinary.com/flextance/image/upload/v1649709596/williamhzo.me/31082019-ELA02772_q8uwmp.jpg"
+      />
       <meta name="theme-color" content="#151718" />
     </Head>
   );
