@@ -28,7 +28,7 @@
   }
 
   em {
-    @apply font-serif text-high-contrast;
+    @apply font-serif text-[17px] text-high-contrast;
   }
 
   ::selection {
