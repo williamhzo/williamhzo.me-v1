@@ -46,8 +46,8 @@ export default function Main() {
                   Inquisitive and driven by nature, I aim to constantly be
                   learning and challenge myself out of my comfort zone. My sweet
                   spot is at the intersection of Product, Design and
-                  Engineering. I consider myself a &quot;Product-Minded Software
-                  Engineer&quot; as described in{" "}
+                  Engineering. I strive to be the &quot;Product-Minded Software
+                  Engineer&quot; of the team, as described in{" "}
                   <Link href="https://blog.pragmaticengineer.com/the-product-minded-engineer/">
                     Gergely Orosz&apos;s excellent article
                   </Link>{" "}
