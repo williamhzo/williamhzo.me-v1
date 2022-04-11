@@ -8,10 +8,12 @@ export default function Header() {
         william hermozo
       </h1>
 
-      <h2 className="bold mt-6 font-normal text-low-contrast">code & design</h2>
+      <h2 className="bold mt-base font-normal text-low-contrast">
+        code & design
+      </h2>
 
       <nav>
-        <ul className="mt-6 flex items-center space-x-6">
+        <ul className="mt-base flex items-center space-x-6">
           <li>
             <Link href="https://github.com/williamhzo" title="Github">
               <svg

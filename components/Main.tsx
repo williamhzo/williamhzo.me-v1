@@ -8,7 +8,7 @@ export default function Main() {
   const [open, setOpen] = React.useState<boolean>(false);
 
   return (
-    <main className="mb-12">
+    <main className="mb-base">
       <Section>
         <h3>whodis</h3>
 
@@ -34,7 +34,7 @@ export default function Main() {
             </Accordion.Trigger>
 
             <Accordion.Content>
-              <div className="mt-6 flex flex-col gap-6">
+              <div className="mt-base flex flex-col gap-base">
                 <p>Glad you asked!</p>
 
                 <p>

@@ -54,7 +54,7 @@ export default function Contact() {
         .
       </p>
 
-      <nav className="mt-6">
+      <nav>
         <ul className="flex justify-start gap-8">
           <li>
             <a
