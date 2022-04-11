@@ -8,9 +8,7 @@ export default function Header() {
         william hermozo
       </h1>
 
-      <h2 className="bold mt-base font-normal text-low-contrast">
-        code & design
-      </h2>
+      <h2 className="bold mt-base font-normal text-contrast">code & design</h2>
 
       <nav>
         <ul className="mt-base flex items-center space-x-6">

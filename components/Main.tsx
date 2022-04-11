@@ -1,3 +1,4 @@
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import React from "react";
 import Accordion from "./atoms/Accordion";
 import Link from "./atoms/Link";
@@ -40,30 +41,45 @@ export default function Main() {
                 <p>
                   Software engineer from France, I recently moved from Paris to
                   Porto to find inspiration and stimulate creativity.
+                  Inquisitive and driven by nature, I aim to constantly be
+                  learning and challenge myself out of my comfort zone.
                 </p>
 
                 <p>
-                  Inquisitive and driven by nature, I aim to constantly be
-                  learning and challenge myself out of my comfort zone. My sweet
-                  spot is at the intersection of Product, Design and
-                  Engineering. I strive to be the &quot;Product-Minded Software
-                  Engineer&quot; of the team, as described in{" "}
+                  My sweet spot is at the intersection of <em>Product</em>,{" "}
+                  <em>Design</em> and <em>Engineering</em>. I strive to be the
+                  &quot;Product-Minded Software Engineer&quot; of the team:
+                  going beyond specifications finding the{" "}
+                  <em>&quot;why&quot;</em> and searching what&apos;s best for
+                  the user and the product, as described in{" "}
                   <Link href="https://blog.pragmaticengineer.com/the-product-minded-engineer/">
                     Gergely Orosz&apos;s excellent article
-                  </Link>{" "}
-                  holding the same name.
+                  </Link>
+                  . I believe that work doesn&apos;t stop when the feature is
+                  shipped, I deeply care about adoption of the feature,
+                  measuring impact, as well as user&apos;s understanding and
+                  usage of it.
                 </p>
 
                 <p>
                   I&apos;m convinced that knowing user&apos;s behaviour and
                   deeply understanding a business&apos; value proposition is key
-                  to delivering intuitive, impactful and game-changing features
-                  to the product.
+                  to delivering <em>accessible</em>, <em>intuitive</em>, and{" "}
+                  <em>impactful</em> features to the product.
                 </p>
 
                 <p>
                   Trying to be more mindful of my time and focus, to deliver
                   quality work while being productive.
+                </p>
+
+                <p className="text-xs italic">
+                  Made with Next.js, Tailwind CSS and Radix UI, hosted on Vercel
+                  (
+                  <Link href="https://github.com/williamhzo/williamhzo.me">
+                    view source code <ArrowTopRightIcon className="inline" />
+                  </Link>
+                  ).
                 </p>
               </div>
             </Accordion.Content>
