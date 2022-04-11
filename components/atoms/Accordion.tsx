@@ -13,7 +13,7 @@ import type {
   AccordionMultipleProps,
 } from "@radix-ui/react-accordion";
 
-import { ChevronDownIcon } from "@radix-ui/react-icons";
+import { ChevronRightIcon } from "@radix-ui/react-icons";
 import React from "react";
 
 const AccordionItem = ({ children, ...props }: AccordionItemProps) => {
@@ -23,17 +23,27 @@ const AccordionItem = ({ children, ...props }: AccordionItemProps) => {
 const AccordionTrigger = ({ children }: AccordionTriggerProps) => {
   return (
     <Header>
-      <Trigger>
+      <Trigger className="group flex items-center gap-[1ch]">
         {children}
 
-        <ChevronDownIcon aria-hidden />
+        <ChevronRightIcon
+          aria-hidden
+          className="duration-300 ease-in-out group-radix-state-open:rotate-90 "
+        />
       </Trigger>
     </Header>
   );
 };
 
 const AccordionContent = ({ children, ...props }: AccordionContentProps) => {
-  return <Content {...props}>{children}</Content>;
+  return (
+    <Content
+      className="radix-state-open:animate-slide-down overflow-hidden radix-state-closed:animate-slide-up"
+      {...props}
+    >
+      {children}
+    </Content>
+  );
 };
 
 const Accordion = ({
