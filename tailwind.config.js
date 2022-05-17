@@ -74,8 +74,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require("tailwindcss-radix")(),
-    paddingSafe,
-  ],
+  plugins: [require("tailwindcss-radix")(), paddingSafe],
 };
