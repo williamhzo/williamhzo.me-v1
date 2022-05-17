@@ -6,8 +6,15 @@ class Document extends NextDocument {
       <Html lang="en">
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Lusitana&display=optional"
+            href="https://fonts.googleapis.com/css2?family=Lusitana&display=optional"
             rel="stylesheet"
+          />
+          <link
+            as="font"
+            crossOrigin="anonymous"
+            href="/fonts/inter/inter.woff2"
+            rel="preload"
+            type="font/woff2"
           />
         </Head>
         <body>
