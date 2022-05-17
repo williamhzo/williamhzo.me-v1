@@ -1,3 +1,41 @@
+const plugin = require("tailwindcss/plugin");
+
+const paddingSafe = plugin(({ addUtilities, config, e }) => {
+  const paddings = config("theme.padding", {});
+  const variants = config("variants.padding", {});
+
+  const utilities = Object.entries(paddings).flatMap(([modifier, size]) => ({
+    [`.${e(`p-${modifier}-safe`)}`]: {
+      "padding-top": `max(${size}, env(safe-area-inset-top))`,
+      "padding-bottom": `max(${size}, env(safe-area-inset-bottom))`,
+      "padding-left": `max(${size}, env(safe-area-inset-left))`,
+      "padding-right": `max(${size}, env(safe-area-inset-right))`,
+    },
+    [`.${e(`py-${modifier}-safe`)}`]: {
+      "padding-top": `max(${size}, env(safe-area-inset-top))`,
+      "padding-bottom": `max(${size}, env(safe-area-inset-bottom))`,
+    },
+    [`.${e(`px-${modifier}-safe`)}`]: {
+      "padding-left": `max(${size}, env(safe-area-inset-left))`,
+      "padding-right": `max(${size}, env(safe-area-inset-right))`,
+    },
+    [`.${e(`pt-${modifier}-safe`)}`]: {
+      "padding-top": `max(${size}, env(safe-area-inset-top))`,
+    },
+    [`.${e(`pr-${modifier}-safe`)}`]: {
+      "padding-right": `max(${size}, env(safe-area-inset-right))`,
+    },
+    [`.${e(`pb-${modifier}-safe`)}`]: {
+      "padding-bottom": `max(${size}, env(safe-area-inset-bottom))`,
+    },
+    [`.${e(`pl-${modifier}-safe`)}`]: {
+      "padding-left": `max(${size}, env(safe-area-inset-left))`,
+    },
+  }));
+
+  addUtilities(utilities, variants);
+});
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -36,5 +74,8 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-radix")()],
+  plugins: [
+    require("tailwindcss-radix")(),
+    paddingSafe,
+  ],
 };
