@@ -2,13 +2,12 @@ import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import React from "react";
 import Accordion from "../atoms/Accordion";
 import Link from "../atoms/Link";
-import Section from "../atoms/Section";
 
 export default function WhoDis() {
   const [open, setOpen] = React.useState<boolean>(false);
 
   return (
-    <Section>
+    <section>
       <h3>whodis</h3>
 
       <p>
@@ -81,6 +80,6 @@ export default function WhoDis() {
           </Accordion.Content>
         </Accordion.Item>
       </Accordion>
-    </Section>
+    </section>
   );
 }

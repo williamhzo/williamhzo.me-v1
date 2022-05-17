@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "./atoms/Link";
-import Section from "./atoms/Section";
 import {
   ArrowTopRightIcon,
   ClipboardCopyIcon,
@@ -26,7 +25,7 @@ export default function Contact() {
   }
 
   return (
-    <Section>
+    <section>
       <h3>connect</h3>
 
       <p>
@@ -93,6 +92,6 @@ export default function Contact() {
           </li>
         </ul>
       </nav>
-    </Section>
+    </section>
   );
 }

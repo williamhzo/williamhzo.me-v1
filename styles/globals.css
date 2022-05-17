@@ -11,6 +11,10 @@
     @apply mx-auto my-0 flex max-w-[70ch] flex-col  bg-background px-8 text-contrast;
   }
 
+  section {
+    @apply grid gap-5;
+  }
+
   a,
   option,
   label,
