@@ -1,8 +1,31 @@
-# williamhz.me
+# [williamhzo.me](https://williamhzo.me)
 
-(hypothetical) next steps:
+🐡 Welcome to my small piece of the internet.
+
+## Stack
+
+- 🧰 Built with [Next.js](https://nextjs.org), [React](https://reactjs.org), and [TypeScript](https://www.typescriptlang.org)
+- 🎨 Styled with [Tailwind](https://tailwindcss.com)
+- 🌐 Hosted on [Vercel](https://vercel.com)
+
+## Installation
+
+Clone this repository, then install all dependencies:
+
+```bash
+npm i
+```
+
+Start Next.js development server:
+
+```bash
+npm run dev
+```
+
+## (hypothetical) next steps:
 
 - add dark/light mode toggle
-- add language swithcher (i18n?)
+- add language switcher (i18n?)
 - command palete
-- ad og: meta tags
+- add og: meta tags
+- add Design System page (+ StoryBook?)
