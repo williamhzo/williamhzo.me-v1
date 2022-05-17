@@ -1,7 +1,11 @@
 {
   "name": "williamhzo.me",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "William Hermozo, Frontend Engineer, UI/UX and humans.",
+  "author": "William Hermozo",
+  "license": "MIT",
+  "repository": "https://github.com/williamhzo/williamhzo.me",
+  "homepage": "https://williamhzo.me/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
