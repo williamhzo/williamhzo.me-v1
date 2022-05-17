@@ -1,11 +1,11 @@
 import React from "react";
-import Link from "./atoms/Link";
+import Link from "../atoms/Link";
 import {
   ArrowTopRightIcon,
   ClipboardCopyIcon,
   CheckCircledIcon,
 } from "@radix-ui/react-icons";
-import Tooltip from "./atoms/Tooltip";
+import Tooltip from "../atoms/Tooltip";
 
 const EMAIL = "hi@williamhzo.me";
 const COPY_RESET_DELAY = 4000; // in ms

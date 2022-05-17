@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import React from "react";
-import Contact from "../components/Contact";
+import Contact from "../components/sections/Contact";
 import WhoDis from "../components/sections/WhoDis";
 
 const Home: NextPage = () => {
