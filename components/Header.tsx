@@ -3,7 +3,7 @@ import Link from "./atoms/Link";
 
 export default function Header() {
   return (
-    <header>
+    <header className="pt-16">
       <h1 className="font-serif text-2xl leading-none text-high-contrast">
         william hermozo
       </h1>
@@ -58,6 +58,8 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+
+      <hr className="separator" />
     </header>
   );
 }

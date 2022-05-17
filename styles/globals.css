@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  #__next {
+    @apply flex min-h-screen flex-col justify-between;
+  }
+
+  body {
+    @apply mx-auto my-0 flex max-w-[70ch] flex-col  bg-background px-8 text-contrast;
+  }
+
+  a,
+  option,
+  label,
+  *[role="button"],
+  button:not([disabled]),
+  input:not([disabled]),
+  textarea:not([disabled]),
+  select:not([disabled]) {
+    @apply touch-manipulation;
+  }
+}
+
 @layer components {
   .arrow-icon svg {
     opacity: 0;
