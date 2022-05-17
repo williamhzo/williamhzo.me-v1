@@ -1,18 +1,6 @@
-import Document, {
-  DocumentContext,
-  Head,
-  Html,
-  Main,
-  NextScript,
-} from "next/document";
+import NextDocument, { Head, Html, Main, NextScript } from "next/document";
 
-class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
-    const initialProps = await Document.getInitialProps(ctx);
-
-    return initialProps;
-  }
-
+class Document extends NextDocument {
   render() {
     return (
       <Html lang="en">
@@ -22,7 +10,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body className="mx-auto my-0 flex max-w-[70ch] flex-col bg-background px-8 text-contrast lg:px-8">
+        <body>
           <Main />
           <NextScript />
         </body>
@@ -31,4 +19,4 @@ class MyDocument extends Document {
   }
 }
 
-export default MyDocument;
+export default Document;
