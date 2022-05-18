@@ -5,7 +5,7 @@
 ## Stack
 
 - 🧰 Built with [Next.js](https://nextjs.org), [React](https://reactjs.org), and [TypeScript](https://www.typescriptlang.org)
-- 🎨 Styled with [tailwindcss](https://tailwindcss.com)
+- 🎨 Styled with [Tailwind CSS](https://tailwindcss.com)
 - 🌐 Hosted on [Vercel](https://vercel.com)
 
 ## Installation
