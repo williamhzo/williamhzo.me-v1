@@ -22,10 +22,3 @@ Start Next.js development server:
 npm run dev
 ```
 
-## (hypothetical) next steps:
-
-- add dark/light mode toggle
-- add language switcher (i18n?)
-- command palete
-- add og: meta tags
-- add Design System page (+ StoryBook?)
