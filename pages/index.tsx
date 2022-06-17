@@ -5,7 +5,7 @@ import WhoDis from "../components/sections/WhoDis";
 
 const Home: NextPage = () => {
   return (
-    <main className="pb-base">
+    <main className="container pb-base ">
       <WhoDis />
       <hr className="separator" />
       <Contact />

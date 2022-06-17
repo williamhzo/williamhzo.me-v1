@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply mx-auto my-0 flex max-w-[70ch] flex-col  bg-background px-8 text-contrast;
+    @apply my-0 flex flex-col bg-background px-8 text-contrast;
   }
 
   section {
@@ -25,9 +25,25 @@
   select:not([disabled]) {
     @apply touch-manipulation;
   }
+
+  h3 {
+    @apply text-low-contrast;
+  }
+
+  em {
+    @apply font-serif text-[17px] text-high-contrast;
+  }
+
+  ::selection {
+    @apply bg-contrast text-background;
+  }
 }
 
 @layer components {
+  .container {
+    @apply mx-auto max-w-[74ch] md:px-12;
+  }
+
   .arrow-icon svg {
     opacity: 0;
     position: relative;
@@ -46,17 +62,5 @@
 
   .separator {
     @apply my-5 h-[1px] w-24 border-0 bg-subtle;
-  }
-
-  h3 {
-    @apply text-low-contrast;
-  }
-
-  em {
-    @apply font-serif text-[17px] text-high-contrast;
-  }
-
-  ::selection {
-    @apply bg-contrast;
   }
 }

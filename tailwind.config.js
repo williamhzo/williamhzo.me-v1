@@ -56,6 +56,7 @@ module.exports = {
         subtle: "#313538",
       },
       spacing: {
+        tight: "0.75rem",
         base: "1.5rem",
       },
       keyframes: {

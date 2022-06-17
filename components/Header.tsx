@@ -2,16 +2,38 @@ import React from "react";
 import Link from "./atoms/Link";
 
 export default function Header() {
+  const [displaySubHeading, setDisplaySubHeading] = React.useState(true);
+
+  React.useEffect(() => {
+    function handleScroll() {
+      setDisplaySubHeading(window.scrollY < 30);
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="pt-16">
+    <header className="container sticky top-0 z-50 mb-base bg-background/40 pt-base backdrop-blur backdrop-saturate-200">
       <h1 className="font-serif text-2xl leading-none text-high-contrast">
         william hermozo
       </h1>
 
-      <h2 className="bold mt-base font-normal text-contrast">code & design</h2>
+      <h2
+        className={`bold mt-tight font-normal text-contrast transition-all duration-500 ${
+          displaySubHeading ? "opacity-1" : "opacity-0"
+        }`}
+      >
+        code & design
+      </h2>
 
       <nav>
-        <ul className="mt-base flex items-center space-x-6">
+        <ul
+          className={`transition-translate mt-tight flex items-center space-x-6 duration-500 ${
+            displaySubHeading ? "translate-0" : "translate-y-[-100%]"
+          } `}
+        >
           <li>
             <Link href="https://github.com/williamhzo" title="Github">
               <svg

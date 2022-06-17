@@ -16,6 +16,10 @@ export default function SEO() {
         property="og:description"
         content="William Hzo - Frontend Engineer, UI/UX"
       />
+      <meta
+        property="og:site_name"
+        content="William Hermozo, Frontend Engineer"
+      />
       <meta property="og:locale" content="en_GB" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://williamhzo.me/" />
@@ -23,6 +27,7 @@ export default function SEO() {
         property="og:image"
         content="https://res.cloudinary.com/flextance/image/upload/v1649709596/williamhzo.me/31082019-ELA02772_q8uwmp.jpg"
       />
+      <meta name="twitter:site" content="@williamhzo" />
       <meta name="theme-color" content="#151718" />
     </Head>
   );
