@@ -16,7 +16,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="container sticky top-0 z-50 mt-28 mb-base bg-background/40 pt-base backdrop-blur backdrop-saturate-200">
+    <header className="container sticky top-0 z-50 mb-base mt-base bg-background/40 pt-base backdrop-blur backdrop-saturate-200 sm:mt-28">
       <h1 className="font-serif text-2xl leading-none text-high-contrast">
         <NextLink href="/" passHref>
           william hermozo
