@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "./atoms/Link";
+import NextLink from "next/link";
 
 export default function Header() {
   const [displaySubHeading, setDisplaySubHeading] = React.useState(true);
@@ -15,9 +16,11 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="container sticky top-0 z-50 mb-base bg-background/40 pt-base backdrop-blur backdrop-saturate-200">
+    <header className="container sticky top-0 z-50 mt-28 mb-base bg-background/40 pt-base backdrop-blur backdrop-saturate-200">
       <h1 className="font-serif text-2xl leading-none text-high-contrast">
-        william hermozo
+        <NextLink href="/" passHref>
+          william hermozo
+        </NextLink>
       </h1>
 
       <h2
@@ -35,7 +38,11 @@ export default function Header() {
           } `}
         >
           <li>
-            <Link href="https://github.com/williamhzo" title="Github">
+            <Link
+              href="https://github.com/williamhzo"
+              title="Github"
+              className="ring-sky-200"
+            >
               <svg
                 width="15"
                 height="15"
@@ -81,7 +88,7 @@ export default function Header() {
         </ul>
       </nav>
 
-      <hr className="separator" />
+      {displaySubHeading ? <hr className="separator" /> : null}
     </header>
   );
 }

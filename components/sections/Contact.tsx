@@ -58,11 +58,13 @@ export default function Contact() {
           <li>
             <a
               href="https://github.com/williamhzo"
+              target="_blank"
+              rel="noreferrer"
               title="Github"
               className="social-link"
             >
               github
-              <ArrowTopRightIcon />
+              <ArrowTopRightIcon aria-hidden="true" />
               <span className="sr-only">Github external link</span>
             </a>
           </li>
@@ -70,11 +72,13 @@ export default function Contact() {
           <li>
             <a
               href="https://twitter.com/williamhzo"
+              target="_blank"
+              rel="noreferrer"
               title="Twitter"
               className="social-link"
             >
               twitter
-              <ArrowTopRightIcon />
+              <ArrowTopRightIcon aria-hidden="true" />
               <span className="sr-only">Twitter external link</span>
             </a>
           </li>
@@ -82,11 +86,13 @@ export default function Contact() {
           <li>
             <a
               href="https://www.linkedin.com/in/williamhermozo/"
+              target="_blank"
+              rel="noreferrer"
               title="Linkedin"
               className="social-link"
             >
               linkedin
-              <ArrowTopRightIcon />
+              <ArrowTopRightIcon aria-hidden="true" />
               <span className="sr-only">Linkedin external link</span>
             </a>
           </li>

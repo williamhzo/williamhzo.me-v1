@@ -11,8 +11,8 @@ export default function WhoDis() {
       <h3>whodis</h3>
 
       <p>
-        Frontend Engineer with a deep interest in <em>clean User Interfaces</em>{" "}
-        and web experiences, I thrive at the intersection of Product, Design and
+        Having a deep interest in <em>clean User Interfaces</em> and web
+        experiences, I thrive at the intersection of Product, Design and
         Engineering.
       </p>
 

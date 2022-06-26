@@ -49,7 +49,8 @@ module.exports = {
     extend: {
       colors: {
         background: "#151718",
-        "high-contrast": "#ECEDEE",
+        primary: "#a5f3fc",
+        "high-contrast": "#e0f2fe", // sky-100
         contrast: "#9BA1A5",
         "low-contrast": "#687176",
         "lowest-contrast": "#4C5155",
@@ -68,10 +69,39 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)", opacity: 1 },
           to: { height: 0, opacity: 0 },
         },
+        "text-shimmer": {
+          from: { backgroundPosition: "0 0" },
+          to: { backgroundPosition: "-200% 0" },
+        },
+        "slide-up-and-fade": {
+          "0%": { opacity: 0, transform: "translateY(2px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+        "slide-right-and-fade": {
+          "0%": { opacity: 0, transform: "translateX(-2px)" },
+          "100%": { opacity: 1, transform: "translateX(0)" },
+        },
+        "slide-down-and-fade": {
+          "0%": { opacity: 0, transform: "translateY(-2px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+        "slide-left-and-fade": {
+          "0%": { opacity: 0, transform: "translateX(2px)" },
+          "100%": { opacity: 1, transform: "translateX(0)" },
+        },
       },
       animation: {
         "slide-up": "slide-up 0.3s ease-in-out forwards",
         "slide-down": "slide-down 0.3s ease-in-out forwards",
+        "text-shimmer": "text-shimmer 2.75s ease-out infinite alternate",
+        "slide-up-and-fade":
+          "slide-up-and-fade 300ms cubic-bezier(0.16, 1, 0.3, 1) forwards",
+        "slide-right-and-fade":
+          "slide-right-and-fade 300ms cubic-bezier(0.16, 1, 0.3, 1) forwards",
+        "slide-down-and-fade":
+          "slide-down-and-fade 300ms cubic-bezier(0.16, 1, 0.3, 1) forwards",
+        "slide-left-and-fade":
+          "slide-left-and-fade 300ms cubic-bezier(0.16, 1, 0.3, 1) forwards",
       },
     },
   },

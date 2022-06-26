@@ -1,4 +1,5 @@
 import React from "react";
+import cx from "classnames";
 
 type LinkProps = {
   children: string | React.ReactNode;
@@ -19,7 +20,7 @@ export default function Link({
       target="_blank"
       rel="noreferrer"
       title={title}
-      className={`${className} text-high-contrast hover:text-contrast`}
+      className={cx("text-high-contrast hover:text-contrast", className)}
     >
       {children}
     </a>

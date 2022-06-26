@@ -4,19 +4,16 @@ import "../styles/fonts.css";
 import type { AppProps } from "next/app";
 import SEO from "../components/SEO";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
+
 import React from "react";
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <div>
       <SEO />
-      <div>
-        <Header />
-        <Component {...pageProps} />
-      </div>
-      <Footer />
-    </>
+      <Header />
+      <Component {...pageProps} />
+    </div>
   );
 }
 
