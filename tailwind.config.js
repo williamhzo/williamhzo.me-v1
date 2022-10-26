@@ -1,4 +1,5 @@
 const plugin = require("tailwindcss/plugin");
+const colors = require("tailwindcss/colors");
 
 const paddingSafe = plugin(({ addUtilities, config, e }) => {
   const paddings = config("theme.padding", {});
@@ -48,13 +49,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        background: "#151718",
-        primary: "#a5f3fc",
-        "high-contrast": "#e0f2fe", // sky-100
-        contrast: "#9BA1A5",
-        "low-contrast": "#687176",
-        "lowest-contrast": "#4C5155",
-        subtle: "#313538",
+        background: colors.gray[900],
+        primary: colors.cyan[200],
+        "high-contrast": colors.cyan[100],
+        contrast: colors.gray[400],
+        "low-contrast": colors.gray[500],
+        subtle: colors.gray[800],
       },
       spacing: {
         tight: "0.75rem",

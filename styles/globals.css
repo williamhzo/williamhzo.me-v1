@@ -35,7 +35,7 @@
   }
 
   ::selection {
-    @apply bg-sky-100 text-background;
+    @apply bg-high-contrast text-background;
   }
 }
 
