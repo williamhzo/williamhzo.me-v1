@@ -7,7 +7,7 @@ export default function WhoDis() {
   const [open, setOpen] = React.useState<boolean>(false);
 
   return (
-    <section>
+    <section className="grid gap-5">
       <h3>whodis</h3>
 
       <p>

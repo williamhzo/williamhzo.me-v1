@@ -25,7 +25,7 @@ export default function Contact() {
   }
 
   return (
-    <section>
+    <section className="grid gap-5">
       <h3>connect</h3>
 
       <p>

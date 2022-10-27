@@ -103,6 +103,9 @@ module.exports = {
         "slide-left-and-fade":
           "slide-left-and-fade 300ms cubic-bezier(0.16, 1, 0.3, 1) forwards",
       },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
     },
   },
   plugins: [require("tailwindcss-radix")(), paddingSafe],
