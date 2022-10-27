@@ -11,10 +11,6 @@
     @apply my-0 flex flex-col bg-background px-8 text-contrast;
   }
 
-  section {
-    @apply grid gap-5;
-  }
-
   a,
   option,
   label,
@@ -62,5 +58,29 @@
 
   .separator {
     @apply my-5 h-[1px] w-24 border-0 bg-subtle;
+  }
+
+  .gradient-hover {
+    @apply bg-subtle;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .gradient-hover::after {
+    --gradient-size: 1000px;
+
+    content: "";
+    position: absolute;
+    top: calc(var(--y-cursor-position, 0) * 1px - var(--gradient-size) / 2);
+    left: calc(var(--x-cursor-position, 0) * 1px - var(--gradient-size) / 2);
+    height: var(--gradient-size);
+    width: var(--gradient-size);
+    background: radial-gradient(rgb(186 230 253 / 0.25), #3984ff00 80%);
+    opacity: 0;
+    @apply transition-opacity duration-700;
+  }
+
+  .gradient-hover:hover::after {
+    opacity: 0.4;
   }
 }
