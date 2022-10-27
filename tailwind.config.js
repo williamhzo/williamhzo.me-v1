@@ -1,5 +1,6 @@
 const plugin = require("tailwindcss/plugin");
 const colors = require("tailwindcss/colors");
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 const paddingSafe = plugin(({ addUtilities, config, e }) => {
   const paddings = config("theme.padding", {});
@@ -43,11 +44,11 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    fontFamily: {
-      sans: ["Inter", "sans-serif"],
-      serif: ["Lusitana", "serif"],
-    },
     extend: {
+      fontFamily: {
+        sans: ["Inter", ...defaultTheme.fontFamily.sans],
+        serif: ["Lusitana", ...defaultTheme.fontFamily.serif],
+      },
       colors: {
         background: colors.zinc[900],
         "high-contrast": colors.sky[200],

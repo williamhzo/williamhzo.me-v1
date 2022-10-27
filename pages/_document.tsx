@@ -5,16 +5,11 @@ class Document extends NextDocument {
     return (
       <Html lang="en">
         <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Lusitana&display=optional"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Lusitana&display=swap"
             rel="stylesheet"
-          />
-          <link
-            as="font"
-            crossOrigin="anonymous"
-            href="/fonts/inter/inter.woff2"
-            rel="preload"
-            type="font/woff2"
           />
         </Head>
         <body>

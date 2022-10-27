@@ -28,7 +28,7 @@ export default function Header() {
       </h1>
 
       <h2
-        className={`bold mt-tight font-normal text-contrast transition-all duration-500 ${
+        className={`mt-tight font-normal text-contrast transition-all duration-500 ${
           displaySubHeading ? "opacity-1" : "opacity-0"
         }`}
       >
