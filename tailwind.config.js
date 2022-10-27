@@ -49,12 +49,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        background: colors.gray[900],
-        primary: colors.cyan[200],
-        "high-contrast": colors.cyan[100],
-        contrast: colors.gray[400],
-        "low-contrast": colors.gray[500],
-        subtle: colors.gray[800],
+        background: colors.zinc[900],
+        "high-contrast": colors.sky[200],
+        contrast: colors.zinc[400],
+        "low-contrast": colors.zinc[500],
+        subtle: colors.zinc[800],
       },
       spacing: {
         tight: "0.75rem",
