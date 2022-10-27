@@ -1,9 +1,8 @@
 import React from "react";
 
 import type { TooltipProps as RadixTooltipProps } from "@radix-ui/react-tooltip";
-
 import { Root, Trigger, Content, Provider } from "@radix-ui/react-tooltip";
-import cx from "classnames";
+import cx from "clsx";
 
 type TooltipProps = RadixTooltipProps & {
   content: JSX.Element | string;
