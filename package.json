@@ -21,7 +21,7 @@
     "next": "^12.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss-radix": "^2.6.1"
+    "tailwindcss-radix": "^2.6.2"
   },
   "devDependencies": {
     "@types/node": "18.11.9",
